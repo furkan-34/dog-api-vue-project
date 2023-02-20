@@ -10,7 +10,7 @@
           <label for="password">Password:</label>
           <input type="password" name="password" v-model="form.password"  />
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit">Login</button>
       </form>
       <p v-if="showError" id="error">Email or Password is incorrect</p>
     </div>

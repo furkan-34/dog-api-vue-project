@@ -82,11 +82,6 @@ label {
 
   .gallery {
     display: grid;
-    /* grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-    grid-gap: 1rem;
-    max-width: 30rem;
-    margin: 5rem auto;
-    padding: 0 5rem; */
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 16px;
   }
@@ -106,13 +101,6 @@ label {
     }
   }
 
-
-  /* .gallery-panel img {
-    width: 30%;
-    height: 12vw;
-    object-fit: cover;
-    border-radius: 0.75rem;
-  } */
 
   .gallery-panel img {
     width: 100%;

@@ -18,7 +18,7 @@
           <label for="password">Password:</label>
           <input type="password" name="password" v-model="form.password" />
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit">Register</button>
       </form>
     </div>
     <p v-if="showError" id="error">User already exists</p>
