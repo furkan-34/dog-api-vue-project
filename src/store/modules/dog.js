@@ -13,8 +13,9 @@ const getters = {
 
 const actions = {
 
-  async GetBreeds({ commit }) {
+  async GetBreeds({ commit, state }) {
     const response = await axios.get("/dogs/breeds");
+    console.log(state.breeds)
     commit("setBreeds", response.data.payload.breeds);
   },
 
@@ -23,8 +24,8 @@ const actions = {
 
     const response = await axios.get(`/dogs/images?search=${dog}`);
     const dogs = response.data.payload.images.map(e => {return {image: e, fav: state.favorites.some(f => f.image == e) ? "red" : "white"}})
-    console.log(response.data.payload.images)
-    console.log(dogs)
+
+    console.log(state.dogs)
     commit("setDogs", dogs);
   },
 
